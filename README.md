@@ -30,7 +30,7 @@ El programa debe implementar una clase respectiva base que contenga al menos los
 Además, el programa debe solicitar al usuario ingresar el precio y número de productos y utilizar los métodos de la clase para calcular y mostrar el descuento aplicado y el precio final. No olvide que la clase de prueba (que contiene el método main), es quien realiza la gestión de ingreso de datos y/o visualización de resultados.
 
 > [!Note]
-> - Implemente los constructores y propiedades _**set(tipo arg)**_ y _**get()**__ unicamente necesarios/usados.
+> - Implemente los constructores y propiedades _**set(tipo arg)**_ y _**get()**_ unicamente necesarios/usados.
 
 ## Problema 2 - Aplicación de ciclos _for(), while(), do-while()_
 
