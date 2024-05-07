@@ -41,9 +41,9 @@ Desarrolla un programa que permita gestionar una lista de empleados de una empre
 3.	Calcular aumento de salario: El programa debe solicitar al usuario ingresar un porcentaje de aumento salarial. Luego, para cada empleado cuyo salario sea menor al salario promedio de todos los empleados, se debe aplicar el aumento correspondiente y mostrar en pantalla el nuevo salario.
 
 La clase "Empleado" debe tener los siguientes atributos:
-•	Nombre: nombre del empleado (cadena de caracteres).
-•	Salario: salario del empleado (número decimal).
-•	Edad: edad del empleado (entero).
+- Nombre: nombre del empleado (cadena de caracteres).
+- Salario: salario del empleado (número decimal).
+- Edad: edad del empleado (entero).
 
 > [!Note]
 > - Clase "Empleado" debe tener un método llamado "mostrarInformacion" (toString) que imprima en pantalla la información del empleado.
