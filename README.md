@@ -8,7 +8,7 @@
 * En el subDirectorio **Solucion_Codigo** cree un único proyecto NetBeans - _Java Aplication_ (o con el IDE de su preferencia) y en él, agregue todas las clases necesarias para la solución de cada problema _(no use paquetes aun)_. Y para facilitar la revisión, utilice para la clase base el formato _Problema-NroProbl_NombClaseBase_, y para la clase de prueba/ejecutor use _Problema-NroProbl_NombClaseEjecutor_ (Ésta última es la clase de prueba que genera/instancia con objetos cada entidad/clase y verifica su funcionalidad). 
 * Respete la arquitectura **MVC**, es decir, no implemente entradas/salidas desde/hacia teclado-consola directamente en la clase base. Los datos de entrada y resultados deben ser ingresados/mostrados desde/hacia teclado-consola, en la clase de prueba/ejecutor.
 * Para retornar los datos del objeto, usar el método _**toString()**_, vía cadena con formato legible. 
-* Al diseñar su solución, usted tiene la potestad de elegir usar estructuras de datos estáticas y/0 dinámicas. 
+* Al diseñar su solución, usted tiene la potestad de elegir usar estructuras de datos estáticas y/o dinámicas. 
 
 ___
 
