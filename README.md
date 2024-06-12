@@ -1,6 +1,7 @@
-# Taller 5 (Laboratorio) - GRUPAL
+# Taller 9-10 (Laboratorio)
 
-## Creación de programas usando estructuras estáticas y dinámicas de objetos 
+## Elaboración de ejercicios sobre Jerarquía de Herencia a través de Diagramas UML. 
+## Elaboración de ejercicios mediante código haciendo uso del concepto de Herencia en Programación Orientada a Objetos.
 
 * Leer detenidamente cada problemática propuesta.
 * Usar el programa **DIA-UML** _(Open source)_ para generar la representación de su solución _(modelado)_, vía diagramas de clases.
@@ -12,85 +13,92 @@
 
 ___
 
+## Problema 1 - Jerarquía de clases para el Capitlo de libro
 
-## Problema 1 - Sistema de ventas
-
-Desarrolla un programa para gestionar el sistema de ventas de una tienda. El programa debe tener dos clases principales: "Producto" y "CarritoDeCompras".
-
-La clase "Producto" debe tener los siguientes atributos:
-
-- Nombre: el nombre del producto.
-- Precio: el precio del producto.
-- Cantidad: la cantidad disponible del producto.
-
-La clase "CarritoDeCompras" debe tener el siguiente atributo:
-
-- Producto: un "Producto" que representa el producto a la compra por el cliente.
-
-La clase "CarritoDeCompras" debe tener los siguientes métodos:
-
-- _**AgregarProducto**_: recibe como parámetros el nombre y la cantidad de un producto, verifica si hay suficiente cantidad disponible y si el producto existe en la tienda. Si se cumplen las condiciones, crea un objeto de la clase "Producto" con esa información.
-- _**CalcularTotal**_: calcula el total de la compra con el precio en el carrito de compras y la cantidad, al final devuelva el resultado.
-- _**RealizarPago**_: recibe como parámetro el monto pagado por el cliente y verifica si es suficiente para cubrir el total de la compra. Si es suficiente, devuelva un mensaje de agradecimiento y actualiza la cantidad disponible de cada producto en la tienda. Si no es suficiente, muestra un mensaje indicando la cantidad faltante. Adicional si el pago supera un monto promocional de $1000, aplique un descuesto al monto total, el cual es definido por el dueño de la tienda.
-- _**MostrarDetalleCompra**_: muestra en pantalla los productos seleccionados por el cliente y su cantidad.
-
-El programa debe utilizar sentencias de control selectivas if - else para realizar las verificaciones necesarias en cada método, como verificar si hay suficiente cantidad disponible de un producto antes de agregarlo al carrito, o verificar si el monto pagado es suficiente para cubrir el total de la compra.
+Dibujad un diagrama de clases que muestre la estructura de un **capítulo de libro**; un capítulo está compuesto por varias **secciones**, cada una de las cuales comprende varios **párrafos** y **figuras**. Un párrafo incluye varias **sentencias**, cada una de las cuales contiene varias **palabras**.
 
 > [!Note]
-> - Cree una clase de prueba/ejecutor _(quien contiene el método **main()**)_, quien prueba la funcionalidad de este escenario. 
+> - Suponga que en un futuro se prevé que el sistema gestione además de párrafos y figuras otros componentes, como tablas, listas, viñetas, etc.
+> - Suponga además que una palabra puede aparecer en varias sentencias.
 
-## Problema 2 - Sistema de calificaciones de Estudiantes
 
-Desarrolla un programa para gestionar las calificaciones de los estudiantes en una materia. El programa debe tener dos clases principales: "Estudiante" y "Materia".
+## Problema 2 - Alquiler de peliculas
 
-Del Estudiante se registra su: nombre, edad y la materia a cruzar. 
-
-Esta clase debe verificar la aprobación dadas tres calificaciones de una materia: ACD (3.5/10), APE (3.5/10) y AA (3/10). Se aprueba si la sumatoria es de al menos 70%, si cumple con este requisito, se considera que ha aprobado, caso contrario informar al estudiante que deberá rendir un examen de recuperación sobre 3.5/10 pts. agregado al 60% acumulado de los componentes ACD, APE y AA.
-
-Ahora, debe implementar los siguientes requisitos en su programa:
-1. El programa debe permitir al usuario ingresar los datos de un estudiante, incluyendo su nombre y edad.
-2. El programa debe permitir al usuario ingresar los datos de una materia, incluyendo su nombre y las calificaciones del estudiante en las categorías ACD, APE y AA.
-3. El programa debe permitir al usuario vincular una materia a un estudiante, es decir, agregar la materia al estudiante.
-4. El programa debe verificar si un estudiante ha aprobado una materia específica. Para ello, se deben evaluar las calificaciones del estudiante en las tres categorías (ACD, APE y AA). 
+Un videoclub dispone de una serie de películas que pueden estar en **DVD** _(con capacidad en Gb.)_ o en **VHS** _(una sola cinta por película y con cierto tipo de cinta magnetica)_. De las películas interesa guardar el título, el autor, el año de edición y el idioma _(o los idiomas, en caso de DVD)_. El precio de alquiler de las películas varía en función del tipo de película. Las **DVD** siempre son 10% mas caras que las de **VHS**.
 
 > [!Note]
-> - Cree una clase de prueba/ejecutor _(quien contiene el método **main()**)_, quien prueba la funcionalidad de este escenario. 
+> - Analice los tipos de relación de las siguientes posibles clases: Pelicula, Dvd, Vhs, Soporte, etc, y justifique su diseño.
+> - Para probar el diseño jerarquico de clases, instancia en el clase de prueba Ejecutor _(la-s clase-s respectiva-s)_, con datos aleatorios.  
+> - Los escenarios de prueba pueden darse para el alquiler de una o varias peliculas según la preferencia del usuario. 
 
-## PROBLEMA 3: Sistema para categorización de Departamentos en una Empresa
+## Problema 3 - Sistema de envío de mensajes a móviles
 
-Una empresa desea categorizar sus tres departamentos en base al número de empleados y la producción generada por cada departamento. Se debe crear dos clases: "Empresa" y "Departamento".
-
-La clase "Empresa" que tiene un nombre, ruc y dirección asignada, se encargará del departamento, mientras que la clase "Departamento" representará a cada departamento individualmente con el nombre, número de empleados, producción anual, y su categoría merecida, para este último se deben cumplir los siguientes lineamientos: 
-
-| CATEGORIA     | NÚMERO DE EMPLEADOS | PRODUCCIÓN ANUAL |
-| ------------- | ------------------- | ---------------- |
-| C             | 10                  | 500.000          |
-| B             | 20                  | 1.000.000        |
-| A             | >20                 | >1.000.000       |
+Implemente un sistema de envío de mensajes a móviles. Existen dos tipos de mensajes que se pueden enviar entre móviles, **_mensajes de texto (SMS)_** y **_mensajes que contienen imágenes (MMS)_**. Por un lado, los mensajes de texto contienen un mensaje en caracteres que se desea enviar de un móvil a otro. Por otro lado, los mensajes que contienen imágenes almacenan información sobre la imagen a enviar, la cual se representará por el nombre del fichero que la contiene. Independientemente del tipo de mensaje, cada mensaje tendrá asociado un remitente de dicho mensaje y un destinatario. Ambos estarán definidos obligatoriamente por un número de móvil, y opcionalmente se podrá guardar información sobre su nombre. Además, los métodos enviarMensaje y visualizarMensaje deben estar definidos.
 
 > [!Note]
-> - Puede agregar otros métodos o atributos según sea necesario. Su tarea es implementar las clases "Empresa" y "Departamento" en un programa que permita ingresar los datos de varios departamentos y determine su categoría (en la clase Departamento). El programa debe mostrar el resultado para cada departamento ingresado (toString).
+> - Para probar el diseño jerarquico de clases, instancia en el clase de prueba Ejecutor, con datos ficticios. 
 
-## PROBLEMA 4:  App de la Fiscalia
+## Problema 4 - Sistema de nómina para trabajadores
 
-Desde la fiscalía general del Estado le contactan para diseña su App de gestión de información sobre casos de corrupción en el sistema judicial de Ecuador y las personas implicadas en estos casos, dados los siguientes lineamientos:
+Se desea desarrollar un sistema de nómina para los trabajadores de una empresa. Los datos personales de los trabajadores son nombre y apellidos, dirección y DNI. Además, existen diferentes tipos de trabajadores:
 
-- Los casos de corrupción deben incluir registrar información relevante sobre el caso, como el nombre del caso, la fecha de inicio, el estado del caso, y cualquier detalle adicional necesario. Además, debe poderse agregar personas implicadas en el caso y consultar información sobre las personas y sus roles en el caso.
-- Por otro lado, las personas implicadas en un caso de corrupción tienen un nombre, la edad, la ocupación y el nivel de implicación en el caso (acusado, testigo, víctima, etc.). 
-- La fiscalía a decidido establecer fechas para dar atención a los casos de corrupción. Si es que excede los 7 días su estado de “Iniciado” pasa a “Alerta”, y si pasa las 2 semana, su estado debe ser “Urgente”. 
-- De igual manera, para las personas que tengan un nivel de implicación de acusado, pueden acogerse a reducción de pena si es que deciden colaborar confesando la verdad.
-- Para los acusados que tengan una sentencia menor a 1 año, podrán acogerse a pagar fianza si es que colaboran con información útil para resolver el caso. En dicho caso la fianza no podrá superar al 50% del total de daño económico causado al estado. 
+- **Fijos Mensuales**: que cobran una cantidad fija al mes.
+- **Comisionistas**: cobran un porcentaje fijo por las ventas que han realizado
+- **Por Horas**: cobran un precio por cada una de las horas que han realizado durante el mes. El precio es fijo para las primeras 40 horas y es otro para las horas realizadas a partir de la 40 hora mensual.
+- **Jefe**: cobra un sueldo fijo _(no hay que calcularlo)_. Cada empleado tiene obligatoriamente un jefe _(exceptuando los jefes que no tienen ninguno)_. El programa debe permitir dar de alta a trabajadores, así como fijar horas o ventas realizadas e imprimir la nómina correspondiente al final de mes.
 
-Relacione las posibles clases con la asociación correcta, dado que un caso de corrupción puede tener múltiples personas implicadas. Este diseño permite gestionar de manera eficiente la información sobre los casos de corrupción y las personas involucradas en el sistema judicial de Ecuador. 
+> [!Note]
+> - Diseñe la jerarquia de clases UML basado en herencia, que defina de mejor forma el escenario planteado. 
+> - Para probar el diseño de clases, instancia en el clase de prueba Ejecutor _(la-s clase-s respectiva-s)_, con datos aleatorios. 
+> - En los escenarios de prueba verifique su solución con al menos 2 tipos de trabajadores. 
 
-## PROBLEMA 5: Sistema de gestión de conflitos
+## Problema 5 - Venta de entradas al teatro
 
-La ONU _(Organización de Naciones Unidad)_ se contacta con usted para que desarrollo una App que les permita registrar y gestionar toda la información histórica y actual relacionada con los conflictos internacionales suscitados en el mundo contemporáneo dados los siguientes requerimientos: 
+Dadas las siguientes clases, que expresan una relación de herencia entre las entidades: 
 
-- Un conflicto involucra a dos o más países, éste tiene un nombre, países involucrados, fecha de inicio, estado actual, y cualquier otro detalle adicional necesario. La App debe agregar eventos importantes relacionados con el conflicto y consultar información sobre estos eventos.
-- Un evento específico dentro de un conflicto internacional puede ser una batalla, un tratado de paz, una reunión diplomática, etc. Su información relevante es: nombre del evento, fecha en que ocurrió, ubicación y una descripción del evento, etc. Se debe tener actualizar la información del evento y consultar detalles relevantes sobre el mismo.
-- En el caso de existir eventos de batalla en más del 50% de países del mundo, declarar el estado actual del conflicto en Guerra mundial, si esta batalla ocurre entre el 50% al 30% de países del planeta, convocar a la ONU a reunión urgente. 
-- En el caso de existir eventos de batalla en los países desarrollados de primer mundo, declarar de igual forma como Guerra mundial, solo si se usan armas nucleares. 
-- Para el caso de los eventos que causen el 50% o mas de bajas en alguno de los países involucrados, de igual forma se debe convocar a la ONU con carácter de urgente. 
+Se desea gestionar la venta de entradas para un espectáculo en un teatro. El patio de butacas del teatro se divide en varias zonas, cada una identificada por su nombre. Los datos de las zonas son los mostrados en la siguiente tabla:
 
-Relacione las posibles clases modeladas con la asociación correcta. No olvide que un conflicto internacional puede tener múltiples eventos asociados, y un evento puede estar relacionado con un único conflicto internacional. Este diseño permite gestionar de manera eficiente la información sobre los conflictos internacionales y los eventos relacionados en el mundo actual.
+| NOMBRE ZONA     | NÚMERO DE LOCALIDADES | PRECIO NORMA | PRECIO ABONADO  |
+| --------------- | --------------------- | ------------ | --------------- |
+| Principal       | 200                   | 25$          | 17.5$           |
+| PalcoB          | 40                    | 70$          | 40$             |
+| Central         | 400                   | 20$          | 14$             |
+| Lateral         | 100                   | 15.5$        | 10$             |
+
+Para realizar la compra de una entrada, un espectador debe indicar la zona que desea y presentar al vendedor el documento que justifique que tiene algún tipo de descuento _(estudiante, abonado o pensionista)_. El vendedor sacará la entrada del tipo apropiado y de la zona indicada, en el momento de la compra se asignará a la entrada un identificador _(un número entero)_ que permitirá la identificación de la entrada en todas las operaciones que posteriormente se desee realizar con ella.
+
+Una entrada tiene como datos asociados su identificador, la zona a la que pertenece y el nombre del comprador. 
+
+Los precios de las entradas dependen de la zona y del tipo de entrada según lo explicado a continuación:
+
+- **Entradas normales**: su precio es el precio normal de la zona elegida sin ningún tipo de descuento.
+- **Entradas reducidas** (para estudiantes o pensionistas): su precio tiene una rebaja del 15% sobre el precio normal de la zona elegida.
+- **Entradas abonado**: su precio es el precio para abonados de la zona elegida.
+
+La interacción entre el vendedor y la aplicación es la descrita en los siguientes casos de usos.
+
+> [!Note]
+> Caso de uso “Vende entrada”:
+> 
+> 1.	El vendedor elige la opción “vende entrada” e introduce la zona deseada, el nombre del espectador y el tipo (normal, abonado o beneficiario de entrada reducida).
+> 2.	Si la zona elegida no está completa, la aplicación genera una nueva entrada con los datos facilitados.
+> 
+> 	- Si no existe ninguna zona con ese nombre, se notifica y finaliza el caso de uso sin generar la entrada.
+> 	- Si la zona elegida está completa lo notifica y finaliza el caso de uno sin generar la entrada.
+> 
+> 3.	La aplicación muestra el identificador y el precio de la entrada.
+> 
+> Caso de uso “Consulta entrada”:
+> 
+> 1.	El vendedor elige la opción “consulta entrada” e introduce el identificador de la entrada.
+> 2.	La aplicación muestra los datos de la entrada: nombre del espectador, precio y nombre de la zona. Si no existe ninguna entrada con ese identificador, lo notifica y finaliza el caso de uso
+
+
+## Problema 6 - Sistema Un Banco
+
+El banco **UN BANCO** mantiene las cuentas de varios clientes. Los datos que describen a cada una de las cuentas consisten en el número de cuenta, el nombre del cliente y el balance actual. Escriba una clase para implementar dicha cuenta bancaria. El método constructor debe aceptar como parámetros el _número de cuenta_ y el _nombre_. Debe proporcionarse métodos para depositar o retirar una cantidad de dinero y obtener el _balance actual_. 
+
+El banco ofrece a sus clientes dos tipos de cuentas, una de **CHEQUES** y una de **AHORROS**. Una cuenta de cheques puede sobregirarse _(el balance puede ser menor que cero)_, pero una cuenta de ahorros no. Al final de cada mes, se calcula el _interés_ sobre la cantidad que tenga la cuenta de ahorros. Este interés se suma al balance. Escriba clases para describir cada uno de estos tipos de cuentas, haciendo un máximo uso de la herencia. La clase de la cuenta de ahorros debe proporcionar un método que sea invocado para calcular el interés. Además, el banco está pensando en implementar una cuenta **PLATINO** que viene siendo similar a los otros dos tipos anteriores de cuentas bancarias, ésta tiene el interés del 10%, sin cargos ni castigos por sobregiro.
+
+> [!Note]
+> - Ud. debe implementar una clase de PRUEBA _(Clase de ejecución)_ desde la cual se pueda evidenciar el correcto funcionamiento de cada clase con n clientes, y que además se pueda mostrar el balance _(estado de cuenta)_ para cada cliente. 
