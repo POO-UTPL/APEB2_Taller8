@@ -1,4 +1,4 @@
-# Taller 8 - DOO e implementación de soluciones en UML y Java, basados en Polimorfismo - GRUPAL
+# Taller 8 - DOO e implementación de soluciones UML y Java, basados en Polimorfismo - GRUPAL
 
 ## Elaboración de ejercicios sobre Polimorfismo a través de Diagramas UML
 ## Elaboración de ejercicios mediante código haciendo uso del concepto de Polimorfismo en Programación Orientada a Objetos
