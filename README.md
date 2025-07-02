@@ -147,43 +147,18 @@ Con el objetivo de dar continuidad al “Simulador de Conflictos Bélicos Mundia
 
 ### Requisitos Funcionales
 
-- Cada **nación** debe ser representada con:
-- Nombre de la nación
-- Número de habitantes
-- Cantidad de recursos económicos disponibles
-- Nivel de poder militar (valor entre 1 y 100)
-- Estado de conflicto (si está en conflicto o no)
-- Otros datos complementarios que se consideren necesarios
+• De manera general, cada nación debe ser representada con la siguiente información: Nombre de la nación, Número de habitantes de la nación, Cantidad de recursos económicos disponibles, Nivel de poder militar (valor entre 1 y 100), su estado de conflicto que indica si la nación está actualmente en conflicto o no, y cualquier otra información que usted considere necesaria. No olvide implementar los métodos y/o constructores básicos para procesar esta información dados todos los requerimientos. 
+• A su vez se requiere la información de las naciones desarrolladas con alta tecnología militar, como: Si la nación dispone de tecnología avanzada. Para estas naciones avanzadas, implementar el cálculo del impacto, el cual considera un bono de tecnología para el incremento de su poder militar (no olvide que para este último la restricción es de 1-100, y en el caso de sobre pasar, asigne directamente 100).
+• De igual forma se necesita conocer de las naciones en vías de desarrollo su nivel de recursos limitados (recursos económicos y poder militar por cada N habitantes), así como la implementación del cálculo del impacto, el cual reduce el impacto en el conflicto debido a sus recursos limitados. Queda a su criterio matemático y/o estadístico el planteamiento del modelo matemático (con las variables/parámetros que tenga a bien) para calcular este factor de impacto. 
+• Para las naciones desarrolladas o en vías de desarrollo, considere sus naciones aliadas, lo cual es decisivo para incrementar o decrementar su nivel de impacto directamente a su poder militar, pero solo si tiene aliados disponibles.
+• El programa debe permitir declarar conflictos entre dos naciones seleccionadas con un proceso aleatorio/randomico.
+• Calcular las consecuencias del conflicto utilizando polimorfismo y la implementación de cálculo de impacto.
+• Consecuencias del conflicto:
+	- Reducción del 5% de población por cada diferencia en los niveles de poder militar.
+	- Reducción del 10% de recursos de la nación derrotada.
+	- Si las naciones tienen el mismo nivel de poder militar, ambas pierden el 5% de recursos.
+• Al finalizar el programa, debe mostrar un reporte con el estado actual de cada nación (población, recursos y estado de conflicto, etc), así como el total de conflictos que se simularon entre N naciones. 
 
-- Implementar métodos y/o constructores para procesar esta información conforme a los requerimientos.
-
-### Naciones Desarrolladas
-
-- Se debe indicar si la nación dispone de **tecnología avanzada**.
-- Implementar un **cálculo del impacto**, que considera un **bono de tecnología** para el incremento de su poder militar.
-- Si el bono supera el límite permitido, se debe asignar directamente el valor de **100** como poder militar máximo.
-
-### Naciones en Vías de Desarrollo
-
-- Se debe registrar su **nivel de recursos limitados** (recursos económicos y poder militar por cada N habitantes).
-- Implementar el **cálculo del impacto**, que **reduce el impacto** del conflicto en función de sus recursos limitados.
-- Se permite libertad para definir un **modelo matemático o estadístico personalizado** para este cálculo.
-
-### Naciones Aliadas
-
-- Tanto para naciones desarrolladas como en vías de desarrollo, pueden contar con **naciones aliadas**.
-- Las alianzas afectan directamente el **nivel de impacto**, incrementándolo o reduciéndolo, pero **solo si existen aliados disponibles**.
-
-### Simulación de Conflictos
-
-- El programa debe permitir **declarar conflictos** entre dos naciones seleccionadas mediante un **proceso aleatorio**.
-- Utilizar **polimorfismo** para implementar el **cálculo de impacto** y determinar las consecuencias del conflicto.
-
-### Consecuencias del Conflicto
-
-- Reducción del **5% de población** por cada diferencia en los niveles de poder militar.
-- Reducción del **10% de recursos** de la nación derrotada.
-- Si las naciones tienen el **mismo nivel de poder militar**, ambas pierden el **5% de recursos**.
 
 > [!Note]
 >  Reporte Final
