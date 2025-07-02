@@ -141,7 +141,7 @@ Algunos emprendimientos requieren acompañamiento técnico por parte de mentores
 > [!Note]
 > Plantee una solución polimórfica dada una jerarquía de clases con ventajas de herencia. Para la visualización de resultados use los toString() base. 
 
-## Problema 6 - Simulador de Conflictos Bélicos Mundiales 2025 - Versión 2.0
+## Problema 6 - Simulador de conflictos bélicos mundiales 2025
 
 Con el objetivo de dar continuidad al “Simulador de Conflictos Bélicos Mundiales 2025” desarrollado por usted en el primer bimestre, la **ONU** le solicita desarrollar la **versión 2.0** de este simulador en el lenguaje de alto nivel orientado a objetos **Java**, considerando sus **cuatro pilares fundamentales**: **abstracción, encapsulamiento, herencia y polimorfismo**, cumpliendo con los siguientes lineamientos:
 
