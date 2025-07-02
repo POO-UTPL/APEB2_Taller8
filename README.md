@@ -29,7 +29,7 @@ Utilizando programación orientada a objetos, herencia y polimorfismo, implement
 > - Clase de prueba/ejecutor, que demuestre la funcionalidad del juego.
 
 
-## Problema 2 - Restaurant
+## Problema 2 - Gestión de menus en un Restaurant
 
 En un restaurant se tiene diferentes tipos de **menú** para ofrecer a los clientes. Una cuenta por pagar está compuesta por características como: _nombre del cliente, listado de todos las cartas(menú) solicitados por el cliente, valor a cancelar total, subtotal, Iva._
 
