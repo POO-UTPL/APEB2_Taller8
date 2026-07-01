@@ -184,6 +184,73 @@ NombreClase1 <|-- NombreClase2
      - puntaje por criterio,
      - puntaje total,
      - retroalimentación breve y puntual.
+---
+
+7. Rúbrica de evaluación:
+
+RÚBRICA DE EVALUACIÓN PARA LOS TALLERES DE RESOLUCIÓN DE PROBLEMAS CON HERENCIA, UML Y JAVA
+⸻
+CRITERIO: MODELADO
+EXCELENTE (3.5 pts)
+* Las clases representan correctamente la solución.
+* La jerarquía de herencia es adecuada.
+* Los atributos, métodos y relaciones son claros y coherentes.
+SATISFACTORIO (2.8 pts)
+* El modelado es correcto en su mayor parte.
+* Presenta pequeñas omisiones o inconsistencias.
+EN PROGRESO (2.1 pts)
+* El modelado representa parcialmente la solución.
+* Existen errores en clases, relaciones o herencia.
+INICIADO (1.4 pts)
+* El UML presenta múltiples inconsistencias.
+* La estructura propuesta es poco clara.
+AUSENTE (0.35 pts)
+* No presenta UML o es totalmente incorrecto.
+⸻
+CRITERIO: IMPLEMENTACIÓN
+EXCELENTE (3.5 pts)
+* Implementa completamente el modelo diseñado.
+* Aplica correctamente herencia, encapsulamiento y constructores.
+* Presenta código claro y organizado.
+SATISFACTORIO (2.8 pts)
+* Implementa la mayoría de los requerimientos.
+* Presenta errores menores de diseño o programación.
+EN PROGRESO (2.1 pts)
+* Implementa parcialmente la solución.
+* Existen inconsistencias importantes con respecto al UML.
+INICIADO (1.4 pts)
+* La implementación es incompleta o difícil de comprender.
+AUSENTE (0.35 pts)
+* No existe implementación o es totalmente incomprensible.
+⸻
+CRITERIO: RESULTADOS / FUNCIONALIDAD
+EXCELENTE (1.5 pts)
+* Todos los resultados son correctos.
+* El programa funciona sin errores.
+SATISFACTORIO (1.2 pts)
+* Los resultados son mayormente correctos.
+* Presenta errores menores.
+EN PROGRESO (0.9 pts)
+* Solo cumple parcialmente los requerimientos.
+INICIADO (0.6 pts)
+* Los resultados son incompletos o poco confiables.
+AUSENTE (0.15 pts)
+* No genera resultados o estos no son válidos.
+⸻
+CRITERIO: VALIDACIÓN IA
+EXCELENTE (1.5 pts)
+* Presenta evidencias de revisión con IA y/o par académico.
+* Integra mejoras relevantes derivadas de la retroalimentación recibida.
+SATISFACTORIO (1.2 pts)
+* Utiliza la retroalimentación recibida.
+* Realiza algunas mejoras evidentes en su solución.
+EN PROGRESO (0.9 pts)
+* Revisa la retroalimentación recibida, pero aplica pocas mejoras.
+INICIADO (0.6 pts)
+* Existe evidencia mínima de revisión o mejoras.
+AUSENTE (0.15 pts)
+* No presenta evidencia de validación o mejora. 
+
 ```
 
 ---
@@ -287,51 +354,24 @@ ClaseTodo *-- ClaseParte : compone
 
 ---
 
-# Estructura esperada del informe final
+## RESUMEN DE CALIFICACIÓN
 
-El informe final generado debe usar la siguiente estructura:
-
-```md
-# Informe de Revisión del Taller 8
-
-## 1. Diagrama Mermaid extraído
-
-```mermaid
-classDiagram
-```
-
-## 2. Diagrama ideal propuesto
-
-```mermaid
-classDiagram
-```
-
-## 3. Retroalimentación del modelado
-
-Texto breve de máximo una línea.
-
-## 4. Retroalimentación de la implementación Java
-
-Texto breve de máximo una línea.
-
-## 5. Calificación
-
-| Criterio | Nivel | Puntaje |
-|---|---|---:|
-| Modelado |  |  |
-| Implementación |  |  |
-| Resultados / Funcionalidad |  |  |
-| Validación IA |  |  |
-| **Total** |  | **/10** |
-
-## 6. Retroalimentación general
-
-Texto breve, claro y constructivo.
-```
+| Criterio | Puntaje Máximo | Puntaje Obtenido |
+|-----------|:-------------:|:---------------:|
+| Modelado | 3.5 | |
+| Implementación | 3.5 | |
+| Resultados / Funcionalidad | 1.5 | |
+| Validación con IA | 1.5 | |
+| **TOTAL** | **10.0** | |
 
 ---
 
-# Recomendación de uso
+# ESCALA DE VALORACIÓN
 
-Este prompt debe utilizarse como apoyo para la retroalimentación formativa del Taller 8. Su finalidad es validar diagramas UML, revisar implementaciones Java y fortalecer el aprendizaje progresivo de Programación Orientada a Objetos mediante el uso responsable de herramientas de Inteligencia Artificial Generativa.
-
+| Nivel | Porcentaje |
+|--------|:----------:|
+| EXCELENTE | 100% |
+| SATISFACTORIO | 80% |
+| EN PROGRESO | 60% |
+| INICIADO | 40% |
+| AUSENTE | 10% |
